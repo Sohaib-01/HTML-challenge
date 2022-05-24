@@ -31,8 +31,8 @@
 }
 
 #navbar__logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #cd1b1b 0%, #e8704b 100%);
+  background-color: #F24C4C;
+  background-image: linear-gradient(to top, #EC9B3B 0%, #F7D716 100%);
   background-size: 100%;
   -webkit-background-clip: text; /*property used to stop creating a border-style that is part of the background*/
   -moz-background-clip: text;
@@ -61,7 +61,7 @@
 }
 
 .navbar__links {
-  color: #fff;
+  color: #EC9B3B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #dc2929;
+  background: #f8a60d;
   color: #fff;
 }
 
@@ -231,7 +231,7 @@
 .main__content h1 {
   font-size: 4rem;
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ffca1d 0%, #ff8800 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #ff8800 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -247,7 +247,7 @@
 
 .main__btn {
   font-size: 1rem;
-  background-image: linear-gradient(to top, #e57f53 0%, #e84646 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #EC9B3B 100%);
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -350,10 +350,12 @@
 	border-color: #777;
 }
 
+/*if successful input in form then shows green colour*/
 .form-control.success input {
 	border-color: #2ecc71;
 }
 
+/*if unsuccessful input in form then shows red colour*/
 .form-control.error input {
 	border-color: #e74c3c;
 }
@@ -365,11 +367,13 @@
 	right: 10px;
 }
 
+/*if unsuccessful input in form then shows red check circle*/
 .form-control.success i.fa-check-circle {
 	color: #2ecc71;
 	visibility: visible;
 }
 
+/*if unsuccessful input in form then shows red exclamation circle*/
 .form-control.error i.fa-exclamation-circle {
 	color: #e74c3c;
 	visibility: visible;
@@ -453,7 +457,7 @@
   }
 }
 
-/* Services Section */
+/* Services Card Section */
 .services {
   background: #ffffff;
   display: flex;
