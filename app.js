@@ -1,7 +1,7 @@
 const menu = document.querySelector('#mobile-menu'); //querySelector used to return element that matches CSS query
 const menuLinks = document.querySelector('.navbar__menu');
 
-//Animation for when hambuger icon is clicked to animate navbar
+//Animation for when hamburger icon is clicked to animate navbar
 menu.addEventListener('click', function() {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
