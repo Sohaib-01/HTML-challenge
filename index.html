@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
-  <title>Globetrotter Landing Page</title>
+  <title>GlobeTrotter Landing Page</title>
 </head>
 <body>
 
@@ -37,10 +37,12 @@
     </ul>
   </div>
 
+  <!-- Script to open/close menu on landing page -->
   <script>
     const menuToggle = document.querySelector('.toggle')
     const showcase = document.querySelector('.showcase')
 
+    //event listener has been added allowing functions to be called when a specific event happens
     menuToggle.addEventListener('click', () => {
       menuToggle.classList.toggle('active')
       showcase.classList.toggle('active')

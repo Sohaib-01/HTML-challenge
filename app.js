@@ -1,23 +1,27 @@
-const menu = document.querySelector('#mobile-menu');
+const menu = document.querySelector('#mobile-menu'); //querySelector used to return element that matches CSS query
 const menuLinks = document.querySelector('.navbar__menu');
 
-/*Animation for when hambuger is clicked to animate navbar*/
+//Animation for when hambuger icon is clicked to animate navbar
 menu.addEventListener('click', function() {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
 });
 
+//Javascript Validation
+// const used so that variable cannot be reassigned
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
+//event listener has been added allowing functions to be called when a specific event happens
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs(); //custom function
 });
 
+//checking of the inputs
 function checkInputs() {
 	// trim function used to remove the whitespaces from the string
 	const usernameValue = username.value.trim();
@@ -61,9 +65,11 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 } //taken from stackoverflow for email rejects
 
+//const used so that it is fixed and cannot be re-assigned
 const menuToggle = document.querySelector('.toggle');
 const showcase = document.querySelector('.showcase');
 
+//addEventListener used to attach an event handler to an element without overwriting event handlers
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
   showcase.classList.toggle('active');

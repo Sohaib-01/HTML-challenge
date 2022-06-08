@@ -1,3 +1,5 @@
+/*CSS styles for all the webpages*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -274,7 +276,7 @@
   width: 0;
   height: 100%;
   background: #02a902;
-  transition: all 0.35s;
+  transition: all 0.35s; /*colour change effect on button*/
   border-radius: 4px;
 }
 

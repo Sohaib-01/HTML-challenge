@@ -56,9 +56,11 @@ header .logo
   justify-content: space-between;
   align-items: center;
   background: #111;
-  transition: 0.5s;
+  transition: 0.5s; /*effect on main landing page during loading*/
   z-index: 2;
 }
+
+/*when hamburger menu clicked on landing page*/
 .showcase.active
 {
   right: 300px;
@@ -130,7 +132,7 @@ header .logo
 }
 .text a:hover
 {
-  letter-spacing: 6px;
+  letter-spacing: 6px; /*stretch effect on the explore button*/
 }
 .social
 {
@@ -153,10 +155,14 @@ header .logo
   transform: scale(0.5);
   transition: 0.5s;
 }
+
+/*Hover effect of icons on landing page*/
 .social li a:hover
 {
   transform: scale(0.5) translateY(-15px);
 }
+
+/*hamburger menu on landing page*/
 .menu
 {
   position: absolute;
